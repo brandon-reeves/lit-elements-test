@@ -1,0 +1,30 @@
+{
+  "name": "lit-element-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "polymer serve --hostname 0.0.0.0 --module-resolution=node",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@material/mwc-icon": "^0.1.1",
+    "@material/top-app-bar": "^0.35.2",
+    "@polymer/lit-element": "^0.5.1"
+  },
+  "devDependencies": {
+    "@types/material__top-app-bar": "^0.35.0",
+    "@types/polymer": "^1.2.4",
+    "@webcomponents/webcomponentsjs": "^2.0.0",
+    "css-loader": "^0.28.11",
+    "extract-loader": "^2.0.1",
+    "file-loader": "^1.1.11",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
+    "webpack": "^4.9.1",
+    "webpack-cli": "^2.1.4",
+    "webpack-dev-server": "^3.1.4"
+  }
+}
