@@ -11,13 +11,8 @@ class TestAppElement extends LitElement {
 
   _render({title = 'Sup'}: {title: string}) {
     return html`
-      <link rel="stylesheet" href="@material/top-app-bar/mdc-top-app-bar" />
-      <style>
-        @import '@material/top-app-bar/mdc-top-app-bar';
-        .mdc-top-app-bar__title {
-          text-transform: uppercase;
-        }
-      </style>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+      <link rel="stylesheet" href="./dist/bundle.css" />
       <header class="mdc-top-app-bar">
         <div class="mdc-top-app-bar__row">
           <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">

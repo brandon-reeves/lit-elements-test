@@ -4,9 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm-run-all --parallel start:webpack start:polymer",
+    "build": "npm-run-all build:webpack",
+    "build:webpack": "webpack --config ./config/webpack.config.js",
+    "start": "npm-run-all --parallel watch:webpack start:polymer",
     "start:webpack": "webpack-dev-server --host 0.0.0.0 --config ./config/webpack.config.js",
     "start:polymer": "polymer serve --hostname 0.0.0.0 --module-resolution=node",
+    "watch:webpack": "webpack --config ./config/webpack.config.js --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -14,7 +17,8 @@
   "dependencies": {
     "@material/mwc-icon": "^0.1.1",
     "@material/top-app-bar": "^0.35.2",
-    "@polymer/lit-element": "^0.5.1"
+    "@polymer/lit-element": "^0.5.1",
+    "material-components-web": "^0.35.2"
   },
   "devDependencies": {
     "@types/material__top-app-bar": "^0.35.0",
