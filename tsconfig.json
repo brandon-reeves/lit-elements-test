@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "compileOnSave": true,
+    "moduleResolution": "node",
+    "module": "es6",
+    "target": "es2017",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "watch": true
+  },
+  "include": [
+    "index.ts",
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts"
+  ]
+}
