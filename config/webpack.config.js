@@ -1,7 +1,7 @@
 module.exports = [{
-  entry: './src/app.scss',
+  entry: './src/main.ts',
   output: {
-    filename: 'style-bundle.js',
+    filename: 'bundle.js'
   },
   module: {
     rules: [{
@@ -21,6 +21,23 @@ module.exports = [{
             includePaths: ['./node_modules']
           }
         }
+      ]
+    }, {
+      test: /\.css$/,
+      use: [
+        {
+          loader: 'file-loader',
+          options: {
+            name: 'bundle.css',
+          },
+        },
+        { loader: 'extract-loader' },
+        { loader: 'css-loader' }
+      ]
+    }, {
+      test: /\.tsx?$/,
+      use: [
+        { loader: "ts-loader" }
       ]
     }]
   },

@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>ElementsAreLitFam</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link rel="stylesheet" href="./node_modules/material-components-web/dist/material-components-web.min.css" />
+    <link rel="stylesheet" href="./dist/bundle.css" />
     <style>
       body {
         margin: 0;
@@ -19,16 +19,11 @@
     </style>
   </head>
   <body>
-    <script src="./node_modules/material-components-web/dist/material-components-web.min.js"></script>
-    <script src="./node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
-    <script src="./node_modules/reflect-metadata/Reflect.js"></script>
-    <script type="module" src="./src/mwc-top-app-bar/mwc-top-app-bar.element.js"></script>
-    <script type="module" src="./src/mwc-card/mwc-card.element.js"></script>
-    <script type="module" src="./src/test-app/test-app.element.js"></script>
+    <script type="module" src="./dist/bundle.js"></script>
 
     <test-app
-      appBarTitle="Elements Are Lit Fam"
-      contentText="Come Thru"
+      appBarTitle="LitElements Are Lit Fam"
+      cardTitle="Come Thru"
     ></test-app>
   </body>
 </html>

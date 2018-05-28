@@ -1,14 +1,19 @@
 import { html } from '@polymer/lit-element';
 import { LitFamElement, Prop } from '../utils';
+import '../mwc-top-app-bar/mwc-top-app-bar.element';
+import '../mwc-card/mwc-card.element';
 
 class TestAppElement extends LitFamElement {
   @Prop()
   appBarTitle = 'Sup';
 
   @Prop()
-  contentText = 'Fam';
+  cardTitle = 'Fam';
 
-  _render({appBarTitle, contentText}: {appBarTitle: string, contentText: string}) {
+  @Prop()
+  cardContent = 'Esketittt';
+
+  _render({appBarTitle, cardTitle, cardContent}: {appBarTitle: string, cardTitle: string, cardContent: string}) {
     return html`
       <style>
         section {
@@ -19,7 +24,8 @@ class TestAppElement extends LitFamElement {
       <mwc-top-app-bar mainTitle="${appBarTitle}"></mwc-top-app-bar>
       <section>
         <mwc-card>
-          ${contentText}
+          <span slot="title">${cardTitle}</span>
+          <span slot="content">${cardContent}</span>
         </mwc-card>
       </section>
     `;

@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "compileOnSave": true,
     "moduleResolution": "node",
     "module": "es6",
     "target": "es2017",

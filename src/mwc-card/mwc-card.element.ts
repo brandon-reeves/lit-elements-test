@@ -9,21 +9,22 @@ class MWCCardElement extends LitElement {
         :host {
           display: block;
 
-          height: 5rem;
+          height: 8rem;
           width: 15rem;
         }
 
         .mdc-card {
           padding-left: 1em;
           font-family: sans-serif;
-          height: 5rem;
+          height: 8rem;
           width: 15rem;
         }
       </style>
       <div class="mdc-card">
         <div class="mdc-card__media mdc-card__media--square">
           <div class="mdc-card__media-content">
-            <h1><slot id="content" /></h1>
+            <h1><slot name="title" /></h1>
+            <slot name="content" />
           </div>
         </div>
       </div>
