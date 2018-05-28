@@ -1,5 +1,5 @@
 module.exports = [{
-  entry: '../src/app.scss',
+  entry: './src/app.scss',
   output: {
     filename: 'style-bundle.js',
   },
